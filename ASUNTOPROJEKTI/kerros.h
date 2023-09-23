@@ -1,23 +1,25 @@
 #ifndef KERROS_H
 #define KERROS_H
 
+#include "Asunto.h"
 
-class kerros
-{
+class Kerros : public Asunto {
 public:
-    kerros();
+    Asunto as1;
+    Asunto as2;
+    Asunto as3;
+    Asunto as4;
 
+    void maaritaAsunnot();
+    double laskeKulutus(double hinta);
 
-
-
-
+    Kerros();
 
 private:
-
-protected:
-
-
-
+    int kerrostenLukumaara();
+    int lukumaara;
+    int kerrostalo;
+    int asunnot;
 };
 
 #endif // KERROS_H

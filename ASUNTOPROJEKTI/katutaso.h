@@ -1,11 +1,17 @@
 #ifndef KATUTASO_H
 #define KATUTASO_H
 
+#include "Kerros.h"
 
-class katutaso
-{
+class Katutaso : public Kerros {
 public:
-    katutaso();
+    Asunto as1;
+    Asunto as2;
+
+    void maaritaAsunnot();
+    double laskeKulutus(double hinta);
+
+    Katutaso();
 };
 
 #endif // KATUTASO_H

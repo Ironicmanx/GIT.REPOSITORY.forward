@@ -1,16 +1,17 @@
 #ifndef ASUNTO_H
 #define ASUNTO_H
 
-class Asunto
-{
-public:
-    Asunto();
-    void define(int, int);
-    double calculateConsumption(double, bool);
+#include <iostream>
 
-private:
-    int residents;
-    int squares;
+class Asunto {
+public:
+    int asukasMaara = 2;
+    int neliot = 100;
+
+    void maarita();
+    double laskeKulutus(double hinta);
+
+    Asunto();
 };
 
 #endif // ASUNTO_H
