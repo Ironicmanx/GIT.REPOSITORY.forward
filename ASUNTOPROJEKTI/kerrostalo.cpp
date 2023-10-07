@@ -1,4 +1,6 @@
 #include "Kerrostalo.h"
+#include "katutaso.h"
+
 
 using std::cout;
 using std::endl;
@@ -10,7 +12,13 @@ double Kerrostalo::laskeKulutus(double hinta) {
 
 Kerrostalo::Kerrostalo() {
     cout << "Kerrostalo luotu" << endl;
-    eka.maaritaAsunnot();
-    toinen.maaritaAsunnot();
-    kolmas.maaritaAsunnot();
+    eka = new Katutaso;
+    toinen = new Kerros;
+    kolmas = new Kerros;
+}
+
+Kerrostalo::~Kerrostalo() {
+    delete eka;
+    delete toinen;
+    delete kolmas;
 }

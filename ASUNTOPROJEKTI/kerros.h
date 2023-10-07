@@ -5,21 +5,16 @@
 
 class Kerros : public Asunto {
 public:
-    Asunto as1;
-    Asunto as2;
-    Asunto as3;
-    Asunto as4;
+    Asunto* as1;
+    Asunto* as2;
+    Asunto* as3;
+    Asunto* as4;
 
     void maaritaAsunnot();
     double laskeKulutus(double hinta);
 
     Kerros();
-
-private:
-    int kerrostenLukumaara();
-    int lukumaara;
-    int kerrostalo;
-    int asunnot;
+    ~Kerros();
 };
 
 #endif // KERROS_H
