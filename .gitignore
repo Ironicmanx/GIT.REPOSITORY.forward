@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+build-calculatorproject-Desktop_Qt_5_15_2_MinGW_32_bit-Debug/debug/moc_myclass.cpp
+*.cpp
+*.h
